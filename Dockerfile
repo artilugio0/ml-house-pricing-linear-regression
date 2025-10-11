@@ -11,7 +11,7 @@ USER user
 WORKDIR /home/user
 
 RUN python -m venv venv
-RUN bash -c "source /home/user/venv/bin/activate && pip install jupyter matplotlib numpy pandas"
+RUN bash -c "source /home/user/venv/bin/activate && pip install jupyter matplotlib numpy pandas scikit-learn"
 
 WORKDIR /app
 
